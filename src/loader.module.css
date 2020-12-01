@@ -1,0 +1,95 @@
+
+
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: absolute;
+    height: 50px;
+    width: 135px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  
+  div div.ball {
+    width: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 999;
+  }
+  
+  .ball_one {
+    background-color: #FFCE64;
+    animation: jump .5s ease 0s infinite alternate;
+  }
+  
+  .ball_two {
+    background-color: #4BB3EF;
+    animation: jump .5s ease .15s infinite alternate;
+  }
+  
+  .ball_three {
+    background-color: #63DD79;
+    animation: jump .5s ease .25s infinite alternate;
+  }
+  
+  .ball_four {
+    background-color: #FD6C6C;
+    animation: jump .5s ease .35s infinite alternate;
+  }
+  
+  .shadow {
+    position: relative;
+    opacity: .1;
+    bottom: 20px;
+    width: 20px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .shadow_one {
+    animation: shrink .5s ease .0s infinite alternate;
+  }
+  
+  .shadow_two {
+    animation: shrink .5s ease .15s infinite alternate;
+  }
+  
+  .shadow_three {
+    animation: shrink .5s ease .25s infinite alternate;
+  }
+  
+  .shadow_four {
+    animation: shrink .5s ease .35s infinite alternate;
+  }
+  
+  @keyframes jump {
+    0% {transform: scaleY(.8);}
+    100% {
+        transform: translateY(-70px);
+    }   
+  }
+  
+  @keyframes shrink {
+    100% {
+        transform: scaleX(.5);
+        opacity: .01;
+    }    
+  }
+  

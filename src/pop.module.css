@@ -1,0 +1,27 @@
+.modal {
+  margin-top: 5%;
+} 
+
+  .scared {
+    height: 40%;
+    width: 40%;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    
+    .modal {
+      margin-top: 20%;
+    } 
+
+    .scared {
+      height: 40%;
+      width: 40%;
+    }
+
+    .rat {
+      margin-top: 2%;
+      height: 70%;
+      width: 60%;
+    }
+  }

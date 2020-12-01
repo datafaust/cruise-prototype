@@ -1,27 +1,33 @@
 {
-  "name": "cruise-prototype",
+  "name": "rodents-map",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://datafaust.github.io/rodents-map",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.3.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "@material-ui/pickers": "^3.2.10",
+    "d3": "^5.14.1",
+    "gh-pages": "^2.1.1",
+    "leaflet": "^1.5.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.15",
+    "react-dom": "^16.12.0",
+    "react-leaflet": "^2.5.0",
+    "react-leaflet-heatmap-layer": "^2.0.0",
+    "react-scripts": "3.2.0",
+    "react-time-picker": "^4.1.1",
+    "react-weekday-picker": "^1.0.8",
+    "recharts": "^1.8.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
