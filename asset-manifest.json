@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/cruise-prototype/static/css/main.fb9d1ad3.chunk.css",
+    "main.js": "/cruise-prototype/static/js/main.6efb6642.chunk.js",
+    "main.js.map": "/cruise-prototype/static/js/main.6efb6642.chunk.js.map",
+    "runtime-main.js": "/cruise-prototype/static/js/runtime-main.19479d00.js",
+    "runtime-main.js.map": "/cruise-prototype/static/js/runtime-main.19479d00.js.map",
+    "static/js/2.eae5fb07.chunk.js": "/cruise-prototype/static/js/2.eae5fb07.chunk.js",
+    "static/js/2.eae5fb07.chunk.js.map": "/cruise-prototype/static/js/2.eae5fb07.chunk.js.map",
+    "index.html": "/cruise-prototype/index.html",
+    "precache-manifest.bef6fd46f9ddc18e97ea66296a828377.js": "/cruise-prototype/precache-manifest.bef6fd46f9ddc18e97ea66296a828377.js",
+    "service-worker.js": "/cruise-prototype/service-worker.js",
+    "static/css/main.fb9d1ad3.chunk.css.map": "/cruise-prototype/static/css/main.fb9d1ad3.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19479d00.js",
+    "static/js/2.eae5fb07.chunk.js",
+    "static/css/main.fb9d1ad3.chunk.css",
+    "static/js/main.6efb6642.chunk.js"
+  ]
+}
