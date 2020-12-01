@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import Leaf from './Leaf';
-import Dates from './Dates';
-import StatCard from './StatCard';
-import Graph from './Graph';
 import classes from './app.module.css';
 import Navigator from './Navigator';
 import Pop from './Pop';
-import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie
-} from 'recharts';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import HourPicker from './HourPicker';
 
 class App extends Component {
 
@@ -69,7 +62,7 @@ class App extends Component {
 
     try {
       this.fetchData();
-      if (this.state.data.length != 0) {
+      if (this.state.data.length !== 0) {
         this.calculateInspections();
       }
     } catch (err) {
@@ -237,8 +230,8 @@ class App extends Component {
 
 
     //parse datat for borough graph 
-    let data03 = this.state.pieGraphData.map(item => { item["value"] = parseInt(item["value"]); return item })
-    let cleanGraphData = this.state.graphData.map(item => { item["day"] = item["day"].substring(0, 10); return item })
+    //let data03 = this.state.pieGraphData.map(item => { item["value"] = parseInt(item["value"]); return item })
+    //let cleanGraphData = this.state.graphData.map(item => { item["day"] = item["day"].substring(0, 10); return item })
 
     //produce average per day
 
@@ -248,7 +241,7 @@ class App extends Component {
 
 
 
-    let z = [{ value: "6448" }]
+    //let z = [{ value: "6448" }]
     console.log(this.state.topCount)
 
     return (
@@ -258,12 +251,11 @@ class App extends Component {
           <Container fluid="md"  >
             <Navigator  />
           
-            {/**
-             * <Pop
+            <Pop
               showModal={this.state.showModal}
               closeModal={this.closeModal}
             />
-             */}
+             
             
 
             <Row 

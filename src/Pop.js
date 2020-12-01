@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import rat from './assets/rat2.jpeg'
-import scared from './assets/scared3.png'
 import classes from './pop.module.css'
 
 class Pop extends Component {

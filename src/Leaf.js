@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer } from 'react-leaflet';
 import HeatmapLayer from 'react-leaflet-heatmap-layer';
 import classes from './leaf.module.css'
 
@@ -10,13 +10,7 @@ class Leaf extends Component {
     let cleanData = [];
 
 
-    const mapStyles = {
-        position: "relative",
-        top: "0",
-        bottom: "0",
-        width: "100vw", //change to a 100 on both for full screen 
-        height: "70vh"
-      }
+ 
 
       this.props.data.map(data=>{
         cleanData.push([data.latitude, data.longitude, 1])

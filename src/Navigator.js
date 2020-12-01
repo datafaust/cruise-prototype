@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap'
+import {Navbar} from 'react-bootstrap'
 import classes from './nav.module.css';
 import logo from './assets/taxi.png'
 
